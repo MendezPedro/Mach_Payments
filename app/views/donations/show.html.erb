@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @donation.amount %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @donation.title %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @donation.message %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @donation.status %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @donation.code %>
+</p>
+
+<p>
+  <%= raw @svg %>
+</p>
+
+<%= link_to 'Edit', edit_donation_path(@donation) %> |
+<%= link_to 'ya realice el pago', donations_path %>
